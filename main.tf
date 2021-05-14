@@ -18,12 +18,23 @@ terraform {
 }
 
 
-module "apache-us-east-1" {
-  source        = "./apache"
-  region        = "us-east-1"
-  instance_type = "t2.micro"
+#module "apache-us-east-1" {
+ # source        = "./apache"
+#  region        = "us-east-1"
+#  instance_type = "t2.micro"
   #ami= "ami-0742b4e673072066f"
-  ami = "ami-0d5eff06f840b45e9"
+#  ami = "ami-0d5eff06f840b45e9"
+#}
+  
+  module "ec2-instance" {
+  source  = "app.terraform.io/example-org-4f064f/ec2-instance/aws"
+  version = "1.0.1"
+  region = "us-east-1"
+  instance_type = "t2.micro"
+   ami = "ami-0d5eff06f840b45e9"
+
+    
+  # insert required variables here
 }
 
 #module "apache-us-west-1" {
