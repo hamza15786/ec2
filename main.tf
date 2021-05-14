@@ -17,6 +17,19 @@ terraform {
   }
 }
 
+variable "instance_type" {
+  default = "t2.micro"
+}
+
+
+variable "region" {
+
+}
+
+variable "ami" {
+  
+}
+
 
 #module "apache-us-east-1" {
  # source        = "./apache"
