@@ -7,15 +7,15 @@ terraform {
     }
   }
     required_version = "~> 0.14"
-  backend "remote" {
-    hostname      = "app.terraform.io"
-    organization  = "example-org-4f064f"
-
-    workspaces {
-      name = "state-migration"
-    }
+ # backend "remote" {
+ #   hostname      = "app.terraform.io"
+  #  organization  = "example-org-4f064f"
+#
+  #  workspaces {
+   #   name = "state-migration"
+   # }
   }
-}
+
 
 variable "instance_type" {
 }
