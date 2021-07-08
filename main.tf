@@ -18,19 +18,16 @@ terraform {
 }
 
 variable "instance_type" {
-  default = "t2.micro"
 }
 
 
 variable "region" {
   
-  default = "us-east-1"
 
 }
 
 variable "ami" {
   
-  default = "ami-0d5eff06f840b45e9"
   
 }
 
@@ -46,9 +43,9 @@ variable "ami" {
   module "ec2-instance" {
   source  = "app.terraform.io/example-org-4f064f/ec2-instance/aws"
   version = "1.0.4"
- # region = "us-east-1"
- # instance_type = "t2.medium"
- #  ami = "ami-0d5eff06f840b45e9"
+  region = "us-east-1"
+  instance_type = "t2.medium"
+   ami = "ami-0d5eff06f840b45e9"
 
     
   # insert required variables here
