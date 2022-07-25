@@ -6,7 +6,7 @@ terraform {
       version = "~> 3.27"
     }
   }
-    required_version = "~> 1.25"
+    required_version = "~> 0.15.4"
  # backend "remote" {
  #   hostname      = "app.terraform.io"
   #  organization  = "example-org-4f064f"
