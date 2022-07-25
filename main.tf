@@ -17,19 +17,18 @@ terraform {
   }
 
 
-variable "instance_type" {
-}
+#variable "instance_type" {
+#}
 
 
-variable "region" {
+#variable "region" {
   
 
-}
+#}
 
-variable "ami" {
+#variable "ami" {
   
-  
-}
+ #}
 
 
 #module "apache-us-east-1" {
