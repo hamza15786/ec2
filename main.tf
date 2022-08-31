@@ -43,7 +43,7 @@ variable "ami" {
   source  = "app.terraform.io/example-org-4f064f/ec2-instance/aws"
   version = "1.0.5"
   region = "us-east-1"
-  instance_type = t2.large
+  instance_type = var.instance
    ami = var.ami
 
     
