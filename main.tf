@@ -42,7 +42,7 @@ variable "ami" {
   module "ec2-instance" {
   source  = "app.terraform.io/example-org-4f064f/ec2-instance/aws"
   version = "1.0.5"
-  region = "us-east-1"
+  region = "us-west-1"
   instance_type = var.instance_type
    ami = var.ami
 
